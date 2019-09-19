@@ -24,8 +24,13 @@ class FirstTestcase(aetest.Testcase):
 class SecondTestcase(aetest.Testcase):
 
 	@aetest.test
-	def print_name_caps(self, name):
+	def print_name_caps_before(self, name):
 		self.parent.parameters.update(name=name.upper())
+		logging.info(50*"-"+"> {}".format(name))
+
+	@aetest.test
+	def print_name_caps_after(self, name):
+		self.parent.parameters.update(name=name.lower())
 		logging.info(50*"-"+"> {}".format(name))
 
 
