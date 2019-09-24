@@ -8,12 +8,10 @@ class ScriptCommonSetup(aetest.CommonSetup):
 	def check_script_arguments(self):
 		
 		import argparse
-
 		parser = argparse.ArgumentParser(usage="%(prog)s [options]", description="Greets the user")
 		parser.add_argument("--name", dest="name", type=str, help="Name to display greeting", required=True)
 		args, _ = parser.parse_known_args()
 		self.parent.parameters.update(name=args.name)
-		
 		pass
 
 
