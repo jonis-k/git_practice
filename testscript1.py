@@ -21,7 +21,7 @@ class FirstTestcase(aetest.Testcase):
 
 	@aetest.test
 	def print_hello(self):
-		logging.info("Hello\t")
+		logging.info("Hello\t__CIMTESTDIR__")
 
 
 class ScriptCommonCleanup(aetest.CommonCleanup):
