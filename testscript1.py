@@ -1,4 +1,5 @@
 from ats import aetest
+import logging
 
 
 class ScriptCommonSetup(aetest.CommonSetup):
@@ -20,7 +21,7 @@ class FirstTestcase(aetest.Testcase):
 
 	@aetest.test
 	def print_hello(self):
-		print("Hello")
+		logging.info("Hello\t__CIMTESTDIR__")
 
 
 class ScriptCommonCleanup(aetest.CommonCleanup):
