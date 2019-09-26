@@ -19,5 +19,5 @@ def main():
 		exit(1)
 	'''
 
-	logging.info("__CIMTESTDIR__/testscript1.py")
-	run(testscript="__CIMTESTDIR__/testscript1.py")
+	logging.info("__CIMTESTDIR__/testscript2.py")
+	run(testscript="__CIMTESTDIR__/testscript2.py")
