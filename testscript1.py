@@ -21,7 +21,8 @@ class FirstTestcase(aetest.Testcase):
 
 	@aetest.test
 	def print_hello(self):
-		logging.info("Hello\t__CIMTESTDIR__")
+		logging.info("CIM variable in test:\t__CIMTESTDIR__")
+		logging.info("CIM variable passed to test:\t"+dir)
 
 
 class ScriptCommonCleanup(aetest.CommonCleanup):
