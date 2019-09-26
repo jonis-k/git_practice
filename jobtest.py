@@ -18,6 +18,6 @@ def main():
 		print("No such file")
 		exit(1)
 	'''
-	cim_test_dir = __CIMTESTDIR__
-	logging.info(cim_test_dir+"/"+"testscript1.py")
-	run(testscript=cim_test_dir+"/"+"testscript1.py")
+
+	logging.info("__CIMTESTDIR__/testscript1.py")
+	run(testscript="__CIMTESTDIR__/testscript1.py")
