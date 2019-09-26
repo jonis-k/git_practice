@@ -1,8 +1,10 @@
 import ats
 import sys
 from ats.easypy import run
+import logging
 
 def main():
+	'''
 	import argparse
 	parser = argparse.ArgumentParser(usage="%(prog)s [options]", description="Job file test")
 	parser.add_argument("--script", type=str, help="Script to execute", required=True)
@@ -15,3 +17,7 @@ def main():
 	else:
 		print("No such file")
 		exit(1)
+	'''
+	cim_test_dir = __CIMTESTDIR__
+	logging.info(cim_test_dir+"/"+"testscript1.py")
+	run(testscript=cim_test_dir+"/"+"testscript1.py")
