@@ -1,7 +1,6 @@
 import ats
 import sys
 from ats.easypy import run
-import logging
 
 def main():
 	'''
@@ -18,6 +17,5 @@ def main():
 		print("No such file")
 		exit(1)
 	'''
-
-	logging.info("__CIMTESTDIR__/testscript2.py")
+	
 	run(testscript="__CIMTESTDIR__/testscript2.py")
