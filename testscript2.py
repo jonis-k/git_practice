@@ -11,7 +11,7 @@ class ScriptCommonSetup(aetest.CommonSetup):
 		parser = argparse.ArgumentParser(usage="%(prog)s [options]", description="Greets the user")
 		parser.add_argument("--name", dest="name", type=str, help="Name to display greeting", required=True)
 		args, _ = parser.parse_known_args()
-		self.parent.parameters.update(name=args.name)
+		args.name ? self.parent.parameters.update(name=args.name) : self.parent.parameters.update(name="default name")
 		pass
 
 
